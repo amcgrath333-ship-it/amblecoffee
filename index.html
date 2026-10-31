@@ -2,28 +2,25 @@
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Amble Coffee — coffee in nature.</title>
-  <meta name="description" content="Amble Coffee is a specialty coffee shop made for slowing down. Great coffee and tea, natural light, and a reason to eliminate the hurry.">
+  <meta name="description" content="Amble Coffee is a specialty coffee shop and bakery in Chilliwack, BC. Everything made in house, made for slowing down.">
   <link rel="canonical" href="https://amblecoffee.com/">
-  <meta name="theme-color" content="#f6f4ee">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0e0d0b">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Amble Coffee">
   <meta property="og:title" content="Amble Coffee — coffee in nature.">
-  <meta property="og:description" content="A specialty coffee shop made for slowing down.">
+  <meta property="og:description" content="Amble Coffee is a specialty coffee shop and bakery in Chilliwack, BC. Everything made in house, made for slowing down.">
   <meta property="og:url" content="https://amblecoffee.com/">
-  <meta property="og:image" content="https://amblecoffee.com/assets/img/bar-1284.jpg">
+  <meta property="og:image" content="https://amblecoffee.com/assets/img/latte-1400.jpg">
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
-
-  <!-- Local business data for Google. TODO: add "address", "telephone" and "openingHours" once confirmed. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,238 +28,277 @@
     "name": "Amble Coffee",
     "slogan": "coffee in nature.",
     "url": "https://amblecoffee.com/",
+    "image": "https://amblecoffee.com/assets/img/latte-1400.jpg",
     "logo": "https://amblecoffee.com/assets/img/apple-touch-icon.png",
-    "image": "https://amblecoffee.com/assets/img/bar-1284.jpg",
-    "servesCuisine": ["Coffee", "Tea"],
+    "telephone": "+16045550187",
+    "email": "hello@amblecoffee.com",
+    "priceRange": "$$",
+    "servesCuisine": ["Coffee", "Tea", "Bakery"],
+    "address": { "@type": "PostalAddress", "streetAddress": "8120 Riverbend Lane", "addressLocality": "Chilliwack", "addressRegion": "BC", "postalCode": "V2P 0A1", "addressCountry": "CA" },
+    "openingHours": ["Mo-Fr 07:00-17:00", "Sa 08:00-17:00", "Su 08:00-16:00"],
     "sameAs": ["https://www.instagram.com/amblecoffee/"]
   }
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner"><i class="bird"></i><div class="word"><span>amble</span></div></div>
+  </div>
 
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="index.html" aria-label="Amble Coffee home">
+      <a class="brand" href="index.html" aria-label="Amble Coffee, home">
         <i class="bird" aria-hidden="true"></i>
-        <span>amble<small>coffee</small></span>
+        <span class="brand-word">amble<small>coffee</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
-      <nav class="nav" id="site-nav" aria-label="Main">
-        <a href="index.html" aria-current="page">Home</a>
+      <nav class="nav" aria-label="Main">
         <a href="menu.html">Menu</a>
-        <a href="story.html">Our Story</a>
+        <a href="story.html">Story</a>
+        <a href="catering.html">Catering</a>
         <a href="visit.html">Visit</a>
         <a href="careers.html">Careers</a>
-        <a class="nav-cta" href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener">@amblecoffee</a>
+        <a class="btn" href="visit.html">Find us <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
       </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu-overlay"><span class="txt">Menu</span><span class="bars" aria-hidden="true"></span></button>
     </div>
   </header>
 
-  <main id="main">
-    <!-- Hero ---------------------------------------------------------- -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="open-badge reveal" data-open-badge>Checking hours…</span>
-          <h1 class="reveal" data-delay="1">
-            <span class="line">Take a breath.</span>
-            <span class="line">Have a <em>coffee</em>.</span>
-          </h1>
-          <p class="lede reveal" data-delay="2">Life gets busy. Amble is a specialty coffee shop made for slowing down, a place to stay grounded with nature and with each other.</p>
-          <div class="btn-row reveal" data-delay="3">
-            <a class="btn btn--primary" href="menu.html">See the menu
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn--ghost" href="visit.html">Find us</a>
-          </div>
-          <div class="hero-meta reveal" data-delay="3">
-            <span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-              <span class="ph">Street address, Town</span>
-            </span>
-            <span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21c0-6 0-10 6-15-1 6-2 9-6 11M12 21c0-4-1-7-6-9 1 4 3 6 6 7"/></svg>
-              coffee in nature.
-            </span>
-          </div>
-        </div>
+  <div class="menu-overlay" id="menu-overlay">
+    <nav aria-label="Mobile">
+      <a href="index.html" aria-current="page"><span>Home</span></a>
+      <a href="menu.html"><span>Menu</span></a>
+      <a href="story.html"><span>Story</span></a>
+      <a href="catering.html"><span>Catering</span></a>
+      <a href="visit.html"><span>Visit</span></a>
+      <a href="careers.html"><span>Careers</span></a>
+    </nav>
+    <div class="menu-meta">
+      <span data-status></span>
+      <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener">@amblecoffee</a>
+    </div>
+  </div>
 
-        <div class="hero-photo reveal" data-delay="2">
-          <div class="photo">
-            <img src="assets/img/bar-1284.jpg" srcset="assets/img/bar-700.jpg 700w, assets/img/bar-1284.jpg 1284w" sizes="(max-width: 860px) 100vw, 600px" width="1284" height="1212" alt="Late-afternoon sun across the Amble Coffee bar, with green tiles, pendant lights and the espresso machine" fetchpriority="high">
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="label reveal">Specialty coffee &amp; bakery · Chilliwack, BC</span>
+        <h1 class="display split">
+          <span class="line">coffee</span>
+          <span class="line indent"><em>in nature.</em></span>
+        </h1>
+        <p class="lede reveal" data-delay="2">A specialty coffee shop made for slowing down. Everything we pour and bake is made here, by hand, every single morning.</p>
+        <div class="btn-row reveal" data-delay="3">
+          <a class="btn btn--solid" href="menu.html">Explore the menu <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+          <a class="btn" href="visit.html">Plan a visit</a>
+        </div>
+        <div class="hero-foot reveal" data-delay="3">
+          <span data-status></span>
+          <span>8120 Riverbend Lane, Chilliwack</span>
+          <span><strong>Made in house.</strong> Always.</span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="media hero-img"><img src="assets/img/latte-1400.jpg" srcset="assets/img/latte-800.jpg 800w, assets/img/latte-1400.jpg 1400w" sizes="(max-width: 960px) 100vw, 50vw" alt="A latte with heart latte art on a dark counter, warm café lights behind" fetchpriority="high"></div>
+        <div class="hero-badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="ring" d="M60 60m-50 0a50 50 0 1 1 100 0a50 50 0 1 1-100 0"/></defs>
+            <text fill="currentColor" font-family="Manrope, sans-serif" font-size="7.4" font-weight="600"><textPath href="#ring" textLength="308" lengthAdjust="spacing">SLOW DOWN · STAY A WHILE · COFFEE IN NATURE ·</textPath></text></svg>
+          <i class="bird"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="section manifesto">
+      <div class="container">
+        <span class="label reveal">am·ble — /ˈam-bəl/</span>
+        <p class="big lit" data-accent="slow,hurry,grounded,other.">Life can get busy. Amble was created to give you a moment to slow down, eliminate the hurry, and stay grounded with nature and with each other.</p>
+        <div class="manifesto-foot">
+          <div class="definition reveal">
+            <b>amble</b><span class="pron">verb</span>
+            <p>To walk or move at a slow, relaxed pace, especially for pleasure.</p>
           </div>
-          <i class="bird hero-bird" aria-hidden="true"></i>
-          <div class="definition">
-            <b>amble</b><span class="pron">/ˈam-bəl/</span>
-            <p>to walk or move at a slow, relaxed pace.</p>
+          <div class="reveal" data-delay="1" style="max-width:520px">
+            <p class="lede" style="max-width:none">The idea behind Amble is that as you enjoy a cup of coffee or tea, you slow down, taking in the moments around you and enjoying the presence of the people you are with.</p>
+            <a class="link" href="story.html">Read our story <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Marquee ------------------------------------------------------- -->
+    <!-- Marquee -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>coffee in nature</span><span>Slow down</span><span>Eliminate the hurry</span><span>Specialty coffee &amp; tea</span><span>Stay a while</span>
-        <span>coffee in nature</span><span>Slow down</span><span>Eliminate the hurry</span><span>Specialty coffee &amp; tea</span><span>Stay a while</span>
+        <span>Made in house</span><span>Slow down</span><span>coffee in nature</span><span>Stay a while</span>
+        <span>Made in house</span><span>Slow down</span><span>coffee in nature</span><span>Stay a while</span>
       </div>
     </div>
 
-    <!-- Intro + pillars ---------------------------------------------- -->
+    <!-- Made in house -->
     <section class="section">
-      <div class="container">
-        <div class="split">
-          <div class="reveal">
-            <span class="eyebrow">Welcome to Amble</span>
-            <h2>A place to <em>eliminate</em> the hurry.</h2>
-            <p class="lede">The idea behind Amble is simple. As you enjoy a cup of coffee or tea, you slow down. You take in the moment around you and enjoy the company of the people you're with.</p>
-            <a class="btn btn--ghost" href="story.html">Read our story
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+      <div class="container collage">
+        <div class="media wipe c-a" data-parallax><img src="assets/img/pour-1200.jpg" srcset="assets/img/pour-700.jpg 700w, assets/img/pour-1200.jpg 1200w" sizes="(max-width: 860px) 100vw, 40vw" alt="Coffee poured slowly from a glass carafe into a white cup" loading="lazy" decoding="async"></div>
+        <div class="media wipe c-b" data-parallax><img src="assets/img/pastry-1800.jpg" srcset="assets/img/pastry-900.jpg 900w, assets/img/pastry-1800.jpg 1800w" sizes="(max-width: 860px) 80vw, 50vw" alt="A breakfast tray with a fresh scone, jam and yogurt on dark wood" loading="lazy" decoding="async"></div>
+        <div class="c-copy">
+          <span class="label reveal">Made in house</span>
+          <h2 class="split" style="margin:18px 0 28px">Nothing rushed. <em>Nothing</em> bought in.</h2>
+          <p class="lede reveal">Our bakers start before sunrise. Syrups simmer in small pots, chai is toasted and ground by hand, and our cold brew rests for a full eighteen hours. If it’s on the counter, we made it.</p>
+          <div class="facts reveal" data-delay="1">
+            <div class="fact"><span class="num">18<sup>hr</sup></span><span>Cold brew steep</span></div>
+            <div class="fact"><span class="num">5<sup>am</sup></span><span>First bake, daily</span></div>
+            <div class="fact"><span class="num">100<sup>%</sup></span><span>Made in house</span></div>
           </div>
-          <div class="photo reveal" data-delay="1" style="aspect-ratio: 3 / 2">
-            <img src="assets/img/shelf-1200.jpg" srcset="assets/img/shelf-700.jpg 700w, assets/img/shelf-1200.jpg 1200w" sizes="(max-width: 860px) 100vw, 560px" width="1200" height="802" loading="lazy" alt="Pine shelves with trailing plants, dried flowers, bags of loose-leaf tea and coffee beans">
-          </div>
-        </div>
-
-        <div class="pillars">
-          <article class="pillar reveal">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="24" cy="24" rx="11" ry="16" transform="rotate(30 24 24)"/><path d="M17 36c4-6 10-18 14-24"/></svg>
-            <h3>Specialty coffee</h3>
-            <p>Carefully chosen beans, dialled in every morning and made with care, cup after cup.</p>
-          </article>
-          <article class="pillar reveal" data-delay="1">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 20h24v8a10 10 0 0 1-10 10h-4a10 10 0 0 1-10-10v-8zM34 22h2a4 4 0 0 1 0 8h-2M22 20c0-4 4-6 4-10"/><path d="M26 10c3 0 5 2 5 4"/></svg>
-            <h3>Loose-leaf tea</h3>
-            <p>Not a coffee person? There's always a good pot of tea brewing here too.</p>
-          </article>
-          <article class="pillar reveal" data-delay="2">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 42V22M24 30c-8 0-12-6-12-14 8 0 12 6 12 14zM24 26c0-7 4-12 12-12 0 8-4 12-12 12z"/></svg>
-            <h3>Rooted in nature</h3>
-            <p>Natural light, green things and pale wood. A calm corner to breathe, read and linger.</p>
-          </article>
         </div>
       </div>
     </section>
 
-    <!-- Menu highlights ---------------------------------------------- -->
-    <section class="section section--mist">
+    <!-- Signatures -->
+    <section class="section section--alt">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="sig-head">
           <div>
-            <span class="eyebrow">From the bar</span>
-            <h2>What we're <em>pouring</em></h2>
+            <span class="label reveal">Signatures</span>
+            <h2 class="split">From the bar, <em>with care.</em></h2>
           </div>
-          <a class="btn btn--primary" href="menu.html">Full menu
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <a class="btn reveal" href="menu.html">Full menu <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
         </div>
-        <div class="feature-cards">
-          <a class="feature-card reveal" href="menu.html#espresso">
-            <!-- Swap for a real photo: <div class="photo"><img src="..." alt="..."></div> -->
-            <div class="photo tone-forest" data-label="Photo · espresso"></div>
-            <h3>Espresso bar</h3>
-            <p>Flat whites, cortados and lattes, pulled with care.</p>
-          </a>
-          <a class="feature-card reveal" data-delay="1" href="menu.html#slow">
-            <div class="photo tone-sage" data-label="Photo · pour over"></div>
-            <h3>Slow bar</h3>
-            <p>Filter and pour over, for when you've got a little longer.</p>
-          </a>
-          <a class="feature-card reveal" data-delay="2" href="menu.html#not-coffee">
-            <div class="photo tone-wood" data-label="Photo · tea"></div>
-            <h3>Tea &amp; more</h3>
-            <p>Loose-leaf teas, chai, matcha and hot chocolate.</p>
-          </a>
+        <ul class="sig-list reveal">
+          <li class="sig-item"><a href="menu.html">
+            <span class="n">01</span><span class="t">Amble Latte</span><span class="d">Wildflower honey, flaked sea salt and our house-made oat milk.</span><span class="p">6.75</span>
+          </a></li>
+          <li class="sig-item"><a href="menu.html">
+            <span class="n">02</span><span class="t">The Slow Pour</span><span class="d">A single origin, hand-poured to order. Ask what’s on today.</span><span class="p">6.50</span>
+          </a></li>
+          <li class="sig-item"><a href="menu.html">
+            <span class="n">03</span><span class="t">Cardamom Bun</span><span class="d">Laminated dough, cardamom sugar, baked at dawn.</span><span class="p">5.25</span>
+          </a></li>
+          <li class="sig-item"><a href="menu.html">
+            <span class="n">04</span><span class="t">Brown Butter Cold Brew</span><span class="d">Eighteen-hour steep, finished with brown butter cream.</span><span class="p">6.95</span>
+          </a></li>
+          <li class="sig-item"><a href="menu.html">
+            <span class="n">05</span><span class="t">House Chai</span><span class="d">Whole spices toasted and ground here, steeped low and slow.</span><span class="p">5.75</span>
+          </a></li>
+        </ul>
+        <div class="sig-float" aria-hidden="true">
+          <img src="assets/img/latte-700.jpg" alt="" loading="lazy">
+          <img src="assets/img/pour-700.jpg" alt="" loading="lazy">
+          <img src="assets/img/pastry-700.jpg" alt="" loading="lazy">
+          <img src="assets/img/iced-pour-700.jpg" alt="" loading="lazy">
+          <img src="assets/img/tea-700.jpg" alt="" loading="lazy">
         </div>
       </div>
     </section>
 
-    <!-- Manifesto ---------------------------------------------------- -->
-    <section class="section section--dark">
-      <div class="container quote reveal">
-        <i class="bird" aria-hidden="true" style="width:64px;height:64px;color:var(--accent-light);margin-bottom:20px"></i>
-        <blockquote>“Life can get busy, but it's important that we stay grounded, with nature and with each other.”</blockquote>
-        <cite>— Amble Coffee</cite>
+    <!-- A day at Amble -->
+    <section class="hscroll" aria-label="A day at Amble">
+      <div class="hscroll-sticky">
+        <div class="container hscroll-head">
+          <div>
+            <span class="label">A day at Amble</span>
+            <h2 class="split">Sunrise to <em>golden hour.</em></h2>
+          </div>
+          <div class="hscroll-progress" aria-hidden="true"><i></i></div>
+        </div>
+        <div class="hscroll-track">
+          <article class="moment">
+            <div class="media"><img src="assets/img/barista-1200.jpg" srcset="assets/img/barista-700.jpg 700w, assets/img/barista-1200.jpg 1200w" sizes="(max-width: 860px) 78vw, 30vw" alt="A barista tamping espresso at the grinder" loading="lazy" decoding="async"></div>
+            <span class="time">7:00</span>
+            <h3>First pour</h3>
+            <p>The grinders wake up, the first shots are dialled in and the doors open to the early risers.</p>
+          </article>
+          <article class="moment">
+            <div class="media"><img src="assets/img/lattes-900.jpg" srcset="assets/img/lattes-700.jpg 700w, assets/img/lattes-900.jpg 900w" sizes="(max-width: 860px) 78vw, 30vw" alt="Two lattes and a berry pastry on a wooden board" loading="lazy" decoding="async"></div>
+            <span class="time">9:30</span>
+            <h3>Out of the oven</h3>
+            <p>Cardamom buns and croissants come out still warm, just in time for the mid-morning lull.</p>
+          </article>
+          <article class="moment">
+            <div class="media"><img src="assets/img/sandwich-1200.jpg" srcset="assets/img/sandwich-700.jpg 700w, assets/img/sandwich-1200.jpg 1200w" sizes="(max-width: 860px) 78vw, 30vw" alt="A focaccia sandwich held up on a plate" loading="lazy" decoding="async"></div>
+            <span class="time">12:30</span>
+            <h3>Midday</h3>
+            <p>Focaccia sandwiches on bread we bake ourselves, and a seat by the window.</p>
+          </article>
+          <article class="moment">
+            <div class="media"><img src="assets/img/cafe-bar-1284.jpg" srcset="assets/img/cafe-bar-700.jpg 700w, assets/img/cafe-bar-1284.jpg 1284w" sizes="(max-width: 860px) 78vw, 30vw" alt="Late sun across the Amble Coffee bar" loading="lazy" decoding="async"></div>
+            <span class="time">3:00</span>
+            <h3>Golden hour</h3>
+            <p>Long light across the bar. The best time for a slow pour and a long conversation.</p>
+          </article>
+          <article class="moment">
+            <div class="media"><img src="assets/img/tea-900.jpg" srcset="assets/img/tea-700.jpg 700w, assets/img/tea-900.jpg 900w" sizes="(max-width: 860px) 78vw, 30vw" alt="A tray with tea, coffee and fresh flowers" loading="lazy" decoding="async"></div>
+            <span class="time">4:00</span>
+            <h3>Slow afternoon</h3>
+            <p>A pot of tea, a good book, and nowhere else to be.</p>
+          </article>
+          <article class="moment moment--end">
+            <span class="label label--plain">Open daily</span>
+            <h3 style="font-size:clamp(2.2rem,1.6rem+2vw,3.4rem);margin:16px 0 28px">Come <em>stay a while.</em></h3>
+            <a class="btn" href="visit.html">Plan a visit <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Visit -------------------------------------------------------- -->
+    <!-- Quote -->
+    <section class="section section--forest">
+      <div class="container quote">
+        <i class="bird reveal" aria-hidden="true"></i>
+        <blockquote class="split">“Taking a breath, enjoying a cup of coffee and being surrounded by nature should all go <em>hand in hand.</em>”</blockquote>
+        <cite class="reveal">— Amble Coffee</cite>
+      </div>
+    </section>
+
+    <!-- Catering -->
+    <section class="band">
+      <div class="media" data-parallax><img src="assets/img/spread-2000.jpg" srcset="assets/img/spread-1000.jpg 1000w, assets/img/spread-2000.jpg 2000w" sizes="100vw" alt="" loading="lazy" decoding="async"></div>
+      <div class="container">
+        <span class="label reveal">Catering</span>
+        <h2 class="split">Bring Amble <em>to your table.</em></h2>
+        <p class="lede reveal">Coffee service, pastry boxes and lunch boards for meetings, celebrations and weddings across the Fraser Valley.</p>
+        <div class="btn-row reveal">
+          <a class="btn btn--solid" href="catering.html">Explore catering <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit -->
     <section class="section">
-      <div class="container">
-        <div class="visit-card reveal">
-          <div class="visit-info">
-            <span class="eyebrow">Come say hello</span>
-            <h2>Find your way <em>to us</em></h2>
-            <ul class="detail-list">
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-                <span class="ph">Street address, Town, Postal code</span>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
-                <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener">@amblecoffee</a>
-              </li>
-            </ul>
-            <table class="hours" data-hours aria-label="Opening hours"></table>
-            <a class="btn btn--primary" href="visit.html">Plan your visit
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </div>
-          <div class="map">
-            <!-- TODO: replace with a Google Maps embed iframe for the café address -->
-            <div class="map-placeholder">
-              <svg class="route" viewBox="0 0 400 400" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 320 C 80 260, 120 340, 200 220 S 320 120, 410 80" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="6 9" stroke-linecap="round"/></svg>
-              <div>
-                <i class="bird pin" aria-hidden="true" style="width:48px;height:48px;color:var(--accent);margin:0 auto 8px;display:block"></i>
-                <strong>Amble Coffee</strong><br>
-                <a href="https://www.google.com/maps/search/?api=1&amp;query=Amble+Coffee" target="_blank" rel="noopener">Open in Google Maps</a>
-              </div>
-            </div>
-          </div>
+      <div class="container visit">
+        <div>
+          <span class="label reveal">Visit</span>
+          <h2 class="split">Find your way <em>to us.</em></h2>
+          <dl class="reveal">
+            <div class="info-row"><dt>Address</dt><dd>8120 Riverbend Lane<br>Chilliwack, BC V2P 0A1</dd></div>
+            <div class="info-row"><dt>Hours</dt><dd><span data-status style="margin-bottom:10px"></span><table class="hours" data-hours aria-label="Opening hours"></table></dd></div>
+            <div class="info-row"><dt>Contact</dt><dd><a href="tel:+16045550187">(604) 555-0187</a><br><a href="mailto:hello@amblecoffee.com">hello@amblecoffee.com</a></dd></div>
+          </dl>
+          <div class="btn-row reveal" style="margin-top:36px"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Chilliwack%2C+BC" target="_blank" rel="noopener">Get directions <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div>
+        </div>
+        <div class="map reveal" data-delay="1">
+          <iframe title="Map showing Amble Coffee" src="https://maps.google.com/maps?q=Chilliwack%2C%20BC&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-pin"><i class="bird"></i><span>Amble</span></div>
         </div>
       </div>
     </section>
 
-    <!-- Instagram ---------------------------------------------------- -->
-    <section class="section section--tight section--mist">
+    <!-- Instagram -->
+    <section class="section section--tight section--alt">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="ig-head">
           <div>
-            <span class="eyebrow">On Instagram</span>
-            <h2>Follow along <em>@amblecoffee</em></h2>
+            <span class="label reveal">@amblecoffee</span>
+            <h2 class="split">Moments, <em>slowly.</em></h2>
           </div>
-          <a class="btn btn--ghost" href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener">Follow us
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <a class="btn reveal" href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener">Follow on Instagram <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
         </div>
-        <!-- TODO: swap the coloured tiles for recent posts (or use an embed widget such as Behold / SnapWidget) -->
-        <div class="ig-grid reveal">
-          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><div class="photo"><img src="assets/img/bar-700.jpg" alt="" loading="lazy"></div></a>
-          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><div class="photo tone-sage"></div></a>
-          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><div class="photo"><img src="assets/img/barista-600.jpg" alt="" loading="lazy"></div></a>
-          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><div class="photo tone-wood"></div></a>
-          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><div class="photo"><img src="assets/img/shelf-700.jpg" alt="" loading="lazy"></div></a>
-          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><div class="photo tone-forest"></div></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter --------------------------------------------------- -->
-    <section class="section section--tight">
-      <div class="container">
-        <div class="newsletter reveal">
-          <div>
-            <h2>Stay in the loop</h2>
-            <p>Seasonal drinks, new teas and the odd event. A few emails a year, never spam.</p>
-          </div>
-          <!-- TODO: set action to your Mailchimp / Klaviyo / Formspree endpoint -->
-          <form action="#" method="post" data-async data-success="You're on the list. Thank you!">
-            <input id="nl-email" type="email" name="email" placeholder="you@example.com" required autocomplete="email" aria-label="Email address">
-            <button class="btn btn--light" type="submit">Sign up</button>
-            <p class="form-note" role="status" aria-live="polite"></p>
-          </form>
+        <div class="ig reveal">
+          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><img src="assets/img/cafe-barista-600.jpg" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><img src="assets/img/iced-pour-700.jpg" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><img src="assets/img/trio-900.jpg" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><img src="assets/img/cup-1000.jpg" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><img src="assets/img/barista-700.jpg" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Amble Coffee on Instagram"><img src="assets/img/cafe-bar-700.jpg" alt="" loading="lazy"></a>
         </div>
       </div>
     </section>
@@ -270,48 +306,49 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top">
         <div>
-          <a class="brand" href="index.html" aria-label="Amble Coffee home">
-            <i class="bird" aria-hidden="true"></i>
-            <span>amble</span>
-          </a>
-          <p>coffee in nature.</p>
-          <div class="socials">
-            <a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
-            </a>
+          <span class="label">Letters from Amble</span>
+          <h2>Slow news, <em>once a season.</em></h2>
+          <!-- Connect to Mailchimp / Klaviyo / Formspree by setting the action URL. -->
+          <form class="newsletter" action="#" method="post" data-async data-success="You're on the list. Thank you.">
+            <input type="email" name="email" placeholder="Your email address" required autocomplete="email" aria-label="Email address">
+            <button type="submit">Subscribe <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+          </form>
+          <p class="form-note small" role="status" aria-live="polite" style="margin-top:12px"></p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h4>Visit</h4>
+            <ul>
+              <li>8120 Riverbend Lane</li>
+              <li>Chilliwack, BC V2P 0A1</li>
+              <li><span data-status></span></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="story.html">Our story</a></li>
+              <li><a href="catering.html">Catering</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Say hello</h4>
+            <ul>
+              <li><a href="mailto:hello@amblecoffee.com">hello@amblecoffee.com</a></li>
+              <li><a href="tel:+16045550187">(604) 555-0187</a></li>
+              <li><a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
           </div>
         </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="story.html">Our Story</a></li>
-            <li><a href="visit.html">Visit</a></li>
-            <li><a href="careers.html">Careers</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Find us</h4>
-          <ul>
-            <li class="ph">Street address</li>
-            <li class="ph">Town, Postal code</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Say hello</h4>
-          <ul>
-            <li><a href="visit.html#contact">Contact us</a></li>
-            <li><a href="mailto:careers@amblecoffee.com">careers@amblecoffee.com</a></li>
-            <li><a href="https://www.instagram.com/amblecoffee/" target="_blank" rel="noopener">Instagram</a></li>
-          </ul>
-        </div>
       </div>
-      <div class="footer-word" aria-hidden="true">amble on.</div>
+      <div class="footer-mark" aria-hidden="true">amble<i class="bird"></i></div>
       <div class="footer-bottom">
-        <span>© <span data-year></span> Amble Coffee</span>
-        <span>coffee in nature.</span>
+        <span>© <span data-year></span> Amble Coffee · coffee in nature.</span>
+        <span>Made slowly, in house.</span>
       </div>
     </div>
   </footer>

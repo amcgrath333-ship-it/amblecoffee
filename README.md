@@ -1,21 +1,23 @@
 # Amble Coffee
 
-The website for Amble Coffee: a fast, dependency-free static site (plain HTML, CSS and a little JavaScript).
+A dark, golden-hour website for Amble Coffee: hand-written HTML, CSS and vanilla JavaScript, with no build step and no dependencies.
 
 ## Pages
 
 | File | Page |
 | --- | --- |
-| `index.html` | Home: hero, open-now badge, highlights, visit card, Instagram, newsletter |
+| `index.html` | Home: full-height hero, scroll-lit manifesto, made-in-house collage, signature menu with hover photos, horizontal "day at Amble", catering band, visit and map, Instagram |
 | `menu.html` | Full menu with sticky section tabs |
-| `story.html` | The name, the founding story, values, bean-to-cup |
-| `visit.html` | Hours, map, FAQs, contact form |
+| `story.html` | The Amble story (copy from the original site), values, how it's made |
+| `catering.html` | Packages, how it works, FAQ, enquiry form |
+| `visit.html` | Address, hours, map, FAQ, contact form |
 | `careers.html` | Careers (`careers/` redirects here from the old WordPress URL) |
-| `404.html` | Friendly "wandered off" page |
+| `404.html` | "You've wandered off" |
 
-Shared styles are in `assets/css/styles.css` (brand colours and fonts are defined at the top under `:root`), and behaviour is in `assets/js/main.js`.
-
-The look is taken from the café itself: the sage bird logo (`assets/img/bird.svg`, traced from the old site's icon), green tile, white shiplap and pale pine. The photos in `assets/img/` come from the previous amblecoffee.com.
+- **Styles:** `assets/css/styles.css`. All colours, fonts and easing are tokens at the top.
+- **Behaviour:** `assets/js/main.js` (intro, header, reveals, parallax, hover images, horizontal scroll, hours).
+- **Fonts:** Instrument Serif (display) and Manrope (text, the original site's typeface), from Google Fonts.
+- **Logo:** the original Amble bird (`assets/img/bird.svg`, from the old site's icon set), used as a mask so it can take any colour. The favicons are the originals too.
 
 ## Preview locally
 
@@ -24,22 +26,18 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Still to fill in
+## Invented content to replace
 
-Placeholder text is marked with a dotted green underline (`class="ph"`) so it's easy to spot on the page. Search the code for `ph"`, `TODO` and `PLACEHOLDER`.
+The following are made up so the site reads as finished. Swap in the real details before launch:
 
-- [ ] **Café address**: home hero, visit card, visit page, footer (every page)
-- [ ] **Opening hours**: edit the `HOURS` object at the top of `assets/js/main.js`. Every hours table and the "Open now" badge update automatically.
-- [ ] **General contact email**: the contact form needs a destination (careers@amblecoffee.com is real and already used)
-- [ ] **Menu items and prices**: `menu.html` (everything there is an example)
-- [ ] **Story**: optional line about who's behind Amble and when the café opened (`story.html`)
-- [ ] **FAQ answers**: `visit.html`
-- [ ] **Careers bullets**: `careers.html`, "Join the team"
-- [ ] **More photos**: the coloured blocks (menu cards, Instagram tiles) are placeholders. Put an `<img src="..." alt="...">` inside the `.photo` div and the placeholder styling switches off automatically.
-- [ ] **Map**: replace `.map-placeholder` with a Google Maps embed `<iframe>` for the café
-- [ ] **Forms**: set the `action` on the newsletter form (`index.html`) and contact form (`visit.html`) to a form service such as Formspree or Netlify Forms, or Mailchimp for the newsletter
-- [ ] **Google listing data**: add address, phone and hours to the JSON-LD block in `index.html`
+- **Address**: `8120 Riverbend Lane, Chilliwack, BC V2P 0A1`. Change it in every page footer, the visit blocks (`index.html`, `visit.html`), the JSON-LD block in `index.html` and the map `iframe` query.
+- **Phone**: `(604) 555-0187` (a 555 number, not real)
+- **Email**: `hello@amblecoffee.com` (`careers@amblecoffee.com` is real)
+- **Hours**: the `HOURS` object at the top of `assets/js/main.js`. Every table and "Open now" status updates from it. Also update `openingHours` in the JSON-LD.
+- **Menu items and prices** (`menu.html`, plus the signatures on `index.html`)
+- **Catering packages and prices**, **FAQ answers** and **careers perks**
+- **Forms**: set each form's `action` to a service such as Formspree or Netlify Forms (catering, contact, newsletter). Until then they show a thank-you message only.
 
-## Deploying
+## Photos
 
-The site is plain static files and can be hosted anywhere. Free options include GitHub Pages (Settings → Pages → deploy from branch), Netlify and Cloudflare Pages. Then point `amblecoffee.com` at the host.
+Most photography is free stock from Unsplash and Pexels, colour-graded to match (see `CREDITS.md`). `cafe-bar` and `cafe-barista` are Amble's own photos from the previous site. Replace any of them by keeping the same filenames and sizes.
