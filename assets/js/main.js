@@ -3,7 +3,7 @@
 /* --------------------------------------------------------------------------
    Opening hours: the single source of truth. Every hours table and the
    "open now" badge read from here. 24h "HH:MM", or null when closed.
-   PLACEHOLDER — replace with real hours.
+   PLACEHOLDER: replace with the café's real hours.
    -------------------------------------------------------------------------- */
 const HOURS = {
   mon: ["07:00", "15:00"],
