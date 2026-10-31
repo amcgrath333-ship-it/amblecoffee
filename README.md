@@ -26,7 +26,7 @@ python3 -m http.server 8000
 
 ## Still to fill in
 
-Placeholder text is marked with a dotted orange underline (`class="ph"`) so it's easy to spot on the page. Search the code for `ph"`, `TODO` and `PLACEHOLDER`.
+Placeholder text is marked with a dotted green underline (`class="ph"`) so it's easy to spot on the page. Search the code for `ph"`, `TODO` and `PLACEHOLDER`.
 
 - [ ] **Café address**: home hero, visit card, visit page, footer (every page)
 - [ ] **Opening hours**: edit the `HOURS` object at the top of `assets/js/main.js`. Every hours table and the "Open now" badge update automatically.
